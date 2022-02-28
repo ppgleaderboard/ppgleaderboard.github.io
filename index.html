@@ -46,13 +46,13 @@
       <td style="padding:0px">
         
 
-        <table style="width:75%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <!-- <heading>Biography</heading> -->
               <p>
-          		I am a first year PhD student at the <a href="https://visual.ee.ucla.edu/">Visual Machines Group</a>, UCLA, advised by <a href="https://www.ee.ucla.edu/achuta-kadambi/">Prof. Achuta Kadambi</a>. At VMG, we work on developing cutting-edge tools at the intersection of physics and artificial intelligence, to be applied to diverse problems in computer vision and computational imaging.
-          	  </p>
+          		This leaderboard compares the performance and skin-tone bias existing rPPG methods. We measure performance on two datasets of ours: VITAL2 and mmFair datasets.
+		</p>
               
             </td>
           </tr>
@@ -76,7 +76,48 @@
 .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style> -->
-<table style="width:100%;max-width:800px;border:2px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<caption>VITAL2 Dataset</caption>
+<thead>
+  <tr>
+    <th class="tg-uzvj" rowspan="2">Sr. No.</th>
+    <th class="tg-uzvj" rowspan="2">Method</th>
+    <th class="tg-uzvj" rowspan="2">Year</th>
+    <th class="tg-7btt" colspan="2">Cross Domain<br>MAE (bpm)<br>(Provided Model)</th>
+    <th class="tg-7btt" colspan="2">Retrained Model<br>MAE (bpm)</th>
+  </tr>
+  <tr>
+    <th class="tg-fymr">Performance</th>
+    <th class="tg-fymr">Bias</th>
+    <th class="tg-fymr">Performance</th>
+    <th class="tg-fymr">Bias</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">1.</td>
+    <td class="tg-c3ow">DeepPhys</td>
+    <td class="tg-c3ow">2018</td>
+    <td class="tg-c3ow">3.9</td>
+    <td class="tg-c3ow">1.9</td>
+    <td class="tg-c3ow">2.3</td>
+    <td class="tg-c3ow">0.9</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">2.</td>
+    <td class="tg-c3ow">CHROM</td>
+    <td class="tg-c3ow">2014</td>
+    <td class="tg-c3ow">5.2</td>
+    <td class="tg-c3ow">2.3</td>
+    <td class="tg-c3ow">5.2</td>
+    <td class="tg-c3ow">2.3</td>
+  </tr>
+</tbody>
+</table>
+	
+	
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<caption>mmFair Dataset</caption>
 <thead>
   <tr>
     <th class="tg-uzvj" rowspan="2">Sr. No.</th>
