@@ -106,10 +106,10 @@ name {
   color: white;
 }
 
-table, th, td {
+/* table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
-}
+} */
 
 .one {
   width: 160px;
