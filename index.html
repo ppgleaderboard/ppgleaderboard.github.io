@@ -1,162 +1,95 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  
-  <title>rPPG Leaderboard</title>
-  
-  <meta name="author" content="PPGLeaderboard">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/Chari.png">
+<html>
+<head>
+  <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/resources/tutorial/css/example.css">
 </head>
-
 <body>
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#9F9F9F;"><tbody>
-  	<tr style="padding:0px">
-  		<td style="padding:0px">
-  			<table style="width:55%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	          <tr style="padding:0px">
-	            <td style="padding:2.5%;width:63%;vertical-align:middle">
-	              <p style="text-align:center">
-	                <name>rPPG Leaderboard</name>
-	              </p>
-	              
-<!-- 	              <p style="text-align:center">
-	                <a href="mailto:pradyumnac@ucla.edu">Email</a> &nbsp/&nbsp
-	                <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
-	                <!-- <a href="data/JonBarron-bio.txt">Biography</a> &nbsp/&nbsp -->
-<!-- 	                <a href="https://scholar.google.com/citations?user=GE0ylLMAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-	                <a href="https://www.linkedin.com/in/pradyumna-chari-a93544118/">LinkedIn</a>
-	              </p> --> -->
-	            </td>
-<!-- 	            <td style="padding:2.5%;width:40%;max-width:40%">
-	              <a href="images/Chari.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Chari.jpg" class="hoverZoomLink"></a>
-	            </td> -->
-	          </tr>
-	        </tbody></table>
-  	    </td>
-    </tr>
-  </tbody>
-  </table>
-	
-<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <!-- <heading>Biography</heading> -->
-              <p>
-          		This leaderboard compares the performance and skin-tone bias existing rPPG methods. We measure performance on two datasets of ours: VITAL2 and mmFair datasets.
-		</p>
-              
-            </td>
-          </tr>
-        </tbody></table>
-
-
-   
-      
-
-      
-      </td>
+<div class="example-base example-leaderboard l-demo-container">
+  <table id="leaderboardTable">
+    <tr>
+      <th>Player</th>
+      <th>Score</th>
     </tr>
   </table>
-	
-<!-- <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style> -->
-<table style="width:100%;max-width:800px;border:2px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-<caption>VITAL2 Dataset</caption>
-<thead>
-  <tr>
-    <th class="tg-uzvj" rowspan="2">Sr. No.</th>
-    <th class="tg-uzvj" rowspan="2">Method</th>
-    <th class="tg-uzvj" rowspan="2">Year</th>
-    <th class="tg-7btt" colspan="2">Cross Domain<br>MAE (bpm)<br>(Provided Model)</th>
-    <th class="tg-7btt" colspan="2">Retrained Model<br>MAE (bpm)</th>
-  </tr>
-  <tr>
-    <th class="tg-fymr">Performance</th>
-    <th class="tg-fymr">Bias</th>
-    <th class="tg-fymr">Performance</th>
-    <th class="tg-fymr">Bias</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">1.</td>
-    <td class="tg-c3ow">DeepPhys</td>
-    <td class="tg-c3ow">2018</td>
-    <td class="tg-c3ow">3.9</td>
-    <td class="tg-c3ow">1.9</td>
-    <td class="tg-c3ow">2.3</td>
-    <td class="tg-c3ow">0.9</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">2.</td>
-    <td class="tg-c3ow">CHROM</td>
-    <td class="tg-c3ow">2014</td>
-    <td class="tg-c3ow">5.2</td>
-    <td class="tg-c3ow">2.3</td>
-    <td class="tg-c3ow">5.2</td>
-    <td class="tg-c3ow">2.3</td>
-  </tr>
-</tbody>
-</table>
-	
-	
-<table style="width:100%;max-width:800px;border:2px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-<caption>mmFair Dataset</caption>
-<thead>
-  <tr>
-    <th class="tg-uzvj" rowspan="2">Sr. No.</th>
-    <th class="tg-uzvj" rowspan="2">Method</th>
-    <th class="tg-uzvj" rowspan="2">Year</th>
-    <th class="tg-7btt" colspan="2">Cross Domain<br>MAE (bpm)<br>(Provided Model)</th>
-    <th class="tg-7btt" colspan="2">Retrained Model<br>MAE (bpm)</th>
-  </tr>
-  <tr>
-    <th class="tg-fymr">Performance</th>
-    <th class="tg-fymr">Bias</th>
-    <th class="tg-fymr">Performance</th>
-    <th class="tg-fymr">Bias</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">1.</td>
-    <td class="tg-c3ow">DeepPhys</td>
-    <td class="tg-c3ow">2018</td>
-    <td class="tg-c3ow">3.9</td>
-    <td class="tg-c3ow">1.9</td>
-    <td class="tg-c3ow">2.3</td>
-    <td class="tg-c3ow">0.9</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">2.</td>
-    <td class="tg-c3ow">CHROM</td>
-    <td class="tg-c3ow">2014</td>
-    <td class="tg-c3ow">5.2</td>
-    <td class="tg-c3ow">2.3</td>
-    <td class="tg-c3ow">5.2</td>
-    <td class="tg-c3ow">2.3</td>
-  </tr>
-</tbody>
-</table>
-	
+  <footer>
+    <input class="example-leaderboard-name" type="text" id="nameInput" placeholder="Enter a name">
+    <input class="example-leaderboard-score" type="text" id="scoreInput" placeholder="Record your score...">
+  </footer>
+</div>
+<script>
+  var LEADERBOARD_SIZE = 5;
 
+  // Create our Firebase reference
+  var scoreListRef = new Firebase('https://an22sj9l915.firebaseio-demo.com//scoreList');
 
+  // Keep a mapping of firebase locations to HTML elements, so we can move / remove elements as necessary.
+  var htmlForPath = {};
+
+  // Helper function that takes a new score snapshot and adds an appropriate row to our leaderboard table.
+  function handleScoreAdded(scoreSnapshot, prevScoreName) {
+    var newScoreRow = $("<tr/>");
+    newScoreRow.append($("<td/>").append($("<em/>").text(scoreSnapshot.val().name)));
+    newScoreRow.append($("<td/>").text(scoreSnapshot.val().score));
+
+    // Store a reference to the table row so we can get it again later.
+    htmlForPath[scoreSnapshot.key()] = newScoreRow;
+
+    // Insert the new score in the appropriate place in the table.
+    if (prevScoreName === null) {
+      $("#leaderboardTable").append(newScoreRow);
+    }
+    else {
+      var lowerScoreRow = htmlForPath[prevScoreName];
+      lowerScoreRow.before(newScoreRow);
+    }
+  }
+
+  // Helper function to handle a score object being removed; just removes the corresponding table row.
+  function handleScoreRemoved(scoreSnapshot) {
+    var removedScoreRow = htmlForPath[scoreSnapshot.key()];
+    removedScoreRow.remove();
+    delete htmlForPath[scoreSnapshot.key()];
+  }
+
+  // Create a view to only receive callbacks for the last LEADERBOARD_SIZE scores
+  var scoreListView = scoreListRef.limitToLast(LEADERBOARD_SIZE);
+
+  // Add a callback to handle when a new score is added.
+  scoreListView.on('child_added', function (newScoreSnapshot, prevScoreName) {
+    handleScoreAdded(newScoreSnapshot, prevScoreName);
+  });
+
+  // Add a callback to handle when a score is removed
+  scoreListView.on('child_removed', function (oldScoreSnapshot) {
+    handleScoreRemoved(oldScoreSnapshot);
+  });
+
+  // Add a callback to handle when a score changes or moves positions.
+  var changedCallback = function (scoreSnapshot, prevScoreName) {
+    handleScoreRemoved(scoreSnapshot);
+    handleScoreAdded(scoreSnapshot, prevScoreName);
+  };
+  scoreListView.on('child_moved', changedCallback);
+  scoreListView.on('child_changed', changedCallback);
+
+  // When the user presses enter on scoreInput, add the score, and update the highest score.
+  $("#scoreInput").keypress(function (e) {
+    if (e.keyCode == 13) {
+      var newScore = Number($("#scoreInput").val());
+      var name = $("#nameInput").val();
+      $("#scoreInput").val("");
+
+      if (name.length === 0)
+        return;
+
+      var userScoreRef = scoreListRef.child(name);
+
+      // Use setWithPriority to put the name / score in Firebase, and set the priority to be the score.
+      userScoreRef.setWithPriority({ name:name, score:newScore }, newScore);
+    }
+  });
+</script>
 </body>
-
 </html>
