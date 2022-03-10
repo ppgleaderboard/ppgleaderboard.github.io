@@ -2,12 +2,12 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  
+
   <title>UCLA rPPG Leaderboard</title>
-  
+
   <meta name="author" content="PPGLeaderboard">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/Chari.png">
 </head>
@@ -22,7 +22,7 @@
 	              <p style="text-align:center">
 	                <name>UCLA rPPG Leaderboard</name>
 	              </p>
-	              
+
 <!-- 	              <p style="text-align:center">
 	                <a href="mailto:pradyumnac@ucla.edu">Email</a> &nbsp/&nbsp
 	                <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
@@ -40,45 +40,36 @@
     </tr>
   </tbody>
   </table>
-	
+
 <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
-        
+
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <!-- <heading>Biography</heading> -->
               <p>
-          		This leaderboard compares the performance and skin-tone bias existing rPPG methods. We measure performance on the UCLA rPPG dataset.
-		</p>
-              
+                The UCLA rPPG leaderboard is an effort to centralize the performance and fairness validation of current and future remote PPG algorithms. For the purpose of evaluation, the leaderboard uses the UCLA rPPG dataset. 
+          				</p>
+
             </td>
           </tr>
         </tbody></table>
 
 
-   
-      
 
-      
+
+
+
       </td>
     </tr>
   </table>
-	
-<!-- <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style> -->
-<table style="width:100%;max-width:800px;border:2px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-<caption>UCLA rPPG Dataset</caption>
-<thead>
+
+
+
+<!-- <thead>
   <tr>
     <th class="tg-uzvj" rowspan="2">Sr. No.</th>
     <th class="tg-uzvj" rowspan="2">Method</th>
@@ -113,46 +104,167 @@
     <td class="tg-c3ow">2.3</td>
   </tr>
 </tbody>
-</table>
-	
-<form method="post" action="eval_object_detail.php"><table class="results">	
+</table> -->
+<table style="width:100%;max-width:800px;border:2px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<form method="post" action="eval_object_detail.php"><table class="results" style="width:100%;max-width:800px;">
+  <!-- <caption>UCLA rPPG Dataset</caption> -->
   <tr class="heading">
-    <td class="results"></td>
-     <td class="results">Method</td>
-     <td class="results">Setting</td>
-     <td class="results">Code</td>
-     <td class="results"><span style="color:red"><u>Moderate</u></span></td>
-     <td class="results">Easy</td>
-     <td class="results">Hard</td>
+    <td class="results" rowspan="2"></td>
+     <td class="results" rowspan="2">Method</td>
+     <td class="results" rowspan="2">Year</td>
+     <td class="results" colspan="2">F1-2</td>
+     <td class="results" colspan="2">F3-4</td>
+     <td class="results" colspan="2">F5-6</td>
+     <td class="results" colspan="2">Overall Performance</td>
+     <td class="results" colspan="2">Bias (F5-6 - F1-2)</td>
+     <!-- <td class="results"><span style="color:red"><u>Moderate</u></span></td> -->
+     <!-- <td class="results">Easy</td> -->
+     <!-- <td class="results">Hard</td>
      <td class="results">Runtime</td>
-     <td class="results">Environment</td>
+     <td class="results">Environment</td> -->
    </tr>
+   <tr class="heading">
+     <!-- <td class="results"></td> -->
+      <!-- <td class="results">Method</td> -->
+      <!-- <td class="results">Year</td> -->
+      <td class="results" colspan="1">MAE <span>&#8595;</span></td>
+      <td class="results" colspan="1">RMSE <span>&#8595;</span></td>
+
+      <td class="results" colspan="1">MAE <span>&#8595;</span></td>
+      <td class="results" colspan="1">RMSE <span>&#8595;</span></td>
+
+      <td class="results" colspan="1">MAE <span>&#8595;</span></td>
+      <td class="results" colspan="1">RMSE <span>&#8595;</span></td>
+
+      <td class="results" colspan="1">MAE <span>&#8595;</span></td>
+      <td class="results" colspan="1">RMSE <span>&#8595;</span></td>
+
+      <td class="results" colspan="1">MAE <span>&#8595;</span></td>
+      <td class="results" colspan="1">RMSE <span>&#8595;</span></td>
+      <!-- <td class="results"><span style="color:red"><u>Moderate</u></span></td> -->
+      <!-- <td class="results">Easy</td>
+      <td class="results">Hard</td>
+      <td class="results">Runtime</td>
+      <td class="results">Environment</td> -->
+    </tr>
+    <tr>
+      <td class="results">1</td>
+       <td class="results"><a href="https://bmvc2019.org/wp-content/uploads/papers/0186-paper.pdf">PhysNet</a></td>
+       <td class="results">2019</td>
+
+       <td class="results">0.81</td>
+       <td class="results">1.21</td>
+
+       <td class="results">0.43</td>
+       <td class="results">0.77</td>
+
+       <td class="results"><b>2.61</b></td>
+       <td class="results"><b>3.34</b></td>
+
+       <td class="results"><b>1.06</b></td>
+       <td class="results"><b>1.51</b></td>
+
+       <td class="results"><b>1.80</b></td>
+       <td class="results"><b>2.13</b></td>
+    </tr>
+
+    <tr>
+     <td class="results_sub" colspan="10"></td>
+    </tr>
+    <tr>
+      <td class="results">2</td>
+       <td class="results"><a href="https://arxiv.org/abs/2106.06007">PRN</a></td>
+       <td class="results">2021</td>
+
+       <td class="results"><b>0.65</b></td>
+       <td class="results"><b>1.02</b></td>
+
+       <td class="results"><b>0.40</b></td>
+       <td class="results"><b>0.71</b></td>
+
+       <td class="results">4.35</td>
+       <td class="results">5.26</td>
+
+       <td class="results">1.43</td>
+       <td class="results">1.90</td>
+
+       <td class="results">3.70</td>
+       <td class="results">4.24</td>
+    </tr>
+
+    <tr>
+     <td class="results_sub" colspan="10"></td>
+    </tr>
+    <tr>
+      <td class="results">3</td>
+       <td class="results"><a href="https://pure.tue.nl/ws/portalfiles/portal/31563684/TBME_00467_2016_R1_preprint.pdf">POS</a></td>
+       <td class="results">2016</td>
+
+       <td class="results">3.40</td>
+       <td class="results">4.34</td>
+
+       <td class="results">3.03</td>
+       <td class="results">3.98</td>
+
+       <td class="results">8.07</td>
+       <td class="results">10.23</td>
+
+       <td class="results">4.27</td>
+       <td class="results">5.49</td>
+
+       <td class="results">4.67</td>
+       <td class="results">5.89</td>
+    </tr>
+
+    <tr>
+     <td class="results_sub" colspan="10"></td>
+    </tr>
    <tr>
-    <td class="results">1</td>
-     <td class="results"><a href="eval_object_detail.php?&result=980352466f1ecca32f7d7706b02546bf178159a5">SFD</a></td>
-     <td class="results"></td>
-     <td class="results"></td>
-     <td class="results"><b>84.76 %</b></td>
-     <td class="results">91.73 %</td>
-     <td class="results">77.92 %</td>
-     <td class="results">0.1 s</td>
-     <td class="results">1 core @ 2.5 Ghz (Python + C/C++)</td>
+    <td class="results">4</td>
+     <td class="results"><a href="https://ieeexplore.ieee.org/document/5599853">ICA</a></td>
+     <td class="results">2008</td>
+
+     <td class="results">3.75</td>
+     <td class="results">4.73</td>
+
+     <td class="results">3.26</td>
+     <td class="results">4.19</td>
+
+     <td class="results">7.51</td>
+     <td class="results">9.34</td>
+
+     <td class="results">4.35</td>
+     <td class="results">5.50</td>
+
+     <td class="results">3.76</td>
+     <td class="results">4.61</td>
    </tr>
    <tr>
     <td class="results_sub" colspan="10"></td>
    </tr>
    <tr>
-    <td class="results">2</td>
-     <td class="results"><a href="eval_object_detail.php?&result=abfb9fb9719fa17e3378ecfeae62a00b089e3281">Anonymous</a></td>
-     <td class="results"></td>
-     <td class="results"></td>
-     <td class="results">83.96 %</td>
-     <td class="results">90.83 %</td>
-     <td class="results">77.47 %</td>
-     <td class="results">n/a s</td>
-     <td class="results">1 core @ 2.5 Ghz (Python + C/C++)</td>
+     <td class="results">5</td>
+      <td class="results"><a href="https://www.es.ele.tue.nl/~dehaan/pdf/169_ChrominanceBasedPPG.pdf">CHROM</a></td>
+      <td class="results">2013</td>
+
+      <td class="results">4.06</td>
+      <td class="results">5.11</td>
+
+      <td class="results">3.99</td>
+      <td class="results">5.25</td>
+
+      <td class="results">7.45</td>
+      <td class="results">9.74</td>
+
+      <td class="results">4.79</td>
+      <td class="results">6.22</td>
+
+      <td class="results">3.39</td>
+      <td class="results">4.63</td>
    </tr>
-	
+
+
+
 
 
 </body>
