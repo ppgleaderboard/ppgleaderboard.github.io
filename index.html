@@ -1,162 +1,27 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  
-  <title>rPPG Leaderboard</title>
-  
-  <meta name="author" content="PPGLeaderboard">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/Chari.png">
-</head>
-
-<body>
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#9F9F9F;"><tbody>
-  	<tr style="padding:0px">
-  		<td style="padding:0px">
-  			<table style="width:55%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	          <tr style="padding:0px">
-	            <td style="padding:2.5%;width:63%;vertical-align:middle">
-	              <p style="text-align:center">
-	                <name>rPPG Leaderboard</name>
-	              </p>
-	              
-<!-- 	              <p style="text-align:center">
-	                <a href="mailto:pradyumnac@ucla.edu">Email</a> &nbsp/&nbsp
-	                <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
-	                <!-- <a href="data/JonBarron-bio.txt">Biography</a> &nbsp/&nbsp -->
-<!-- 	                <a href="https://scholar.google.com/citations?user=GE0ylLMAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-	                <a href="https://www.linkedin.com/in/pradyumna-chari-a93544118/">LinkedIn</a>
-	              </p> --> -->
-	            </td>
-<!-- 	            <td style="padding:2.5%;width:40%;max-width:40%">
-	              <a href="images/Chari.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Chari.jpg" class="hoverZoomLink"></a>
-	            </td> -->
-	          </tr>
-	        </tbody></table>
-  	    </td>
-    </tr>
-  </tbody>
-  </table>
-	
-<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <!-- <heading>Biography</heading> -->
-              <p>
-          		This leaderboard compares the performance and skin-tone bias existing rPPG methods. We measure performance on two datasets of ours: VITAL2 and mmFair datasets.
-		</p>
-              
-            </td>
-          </tr>
-        </tbody></table>
-
-
-   
-      
-
-      
-      </td>
-    </tr>
-  </table>
-	
-<!-- <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style> -->
-<table style="width:100%;max-width:800px;border:2px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-<caption>VITAL2 Dataset</caption>
-<thead>
-  <tr>
-    <th class="tg-uzvj" rowspan="2">Sr. No.</th>
-    <th class="tg-uzvj" rowspan="2">Method</th>
-    <th class="tg-uzvj" rowspan="2">Year</th>
-    <th class="tg-7btt" colspan="2">Cross Domain<br>MAE (bpm)<br>(Provided Model)</th>
-    <th class="tg-7btt" colspan="2">Retrained Model<br>MAE (bpm)</th>
-  </tr>
-  <tr>
-    <th class="tg-fymr">Performance</th>
-    <th class="tg-fymr">Bias</th>
-    <th class="tg-fymr">Performance</th>
-    <th class="tg-fymr">Bias</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">1.</td>
-    <td class="tg-c3ow">DeepPhys</td>
-    <td class="tg-c3ow">2018</td>
-    <td class="tg-c3ow">3.9</td>
-    <td class="tg-c3ow">1.9</td>
-    <td class="tg-c3ow">2.3</td>
-    <td class="tg-c3ow">0.9</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">2.</td>
-    <td class="tg-c3ow">CHROM</td>
-    <td class="tg-c3ow">2014</td>
-    <td class="tg-c3ow">5.2</td>
-    <td class="tg-c3ow">2.3</td>
-    <td class="tg-c3ow">5.2</td>
-    <td class="tg-c3ow">2.3</td>
-  </tr>
-</tbody>
-</table>
-	
-	
-<table style="width:100%;max-width:800px;border:2px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-<caption>mmFair Dataset</caption>
-<thead>
-  <tr>
-    <th class="tg-uzvj" rowspan="2">Sr. No.</th>
-    <th class="tg-uzvj" rowspan="2">Method</th>
-    <th class="tg-uzvj" rowspan="2">Year</th>
-    <th class="tg-7btt" colspan="2">Cross Domain<br>MAE (bpm)<br>(Provided Model)</th>
-    <th class="tg-7btt" colspan="2">Retrained Model<br>MAE (bpm)</th>
-  </tr>
-  <tr>
-    <th class="tg-fymr">Performance</th>
-    <th class="tg-fymr">Bias</th>
-    <th class="tg-fymr">Performance</th>
-    <th class="tg-fymr">Bias</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">1.</td>
-    <td class="tg-c3ow">DeepPhys</td>
-    <td class="tg-c3ow">2018</td>
-    <td class="tg-c3ow">3.9</td>
-    <td class="tg-c3ow">1.9</td>
-    <td class="tg-c3ow">2.3</td>
-    <td class="tg-c3ow">0.9</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">2.</td>
-    <td class="tg-c3ow">CHROM</td>
-    <td class="tg-c3ow">2014</td>
-    <td class="tg-c3ow">5.2</td>
-    <td class="tg-c3ow">2.3</td>
-    <td class="tg-c3ow">5.2</td>
-    <td class="tg-c3ow">2.3</td>
-  </tr>
-</tbody>
-</table>
-	
-
-
-</body>
-
-</html>
+<div class="container-wrap">
+	<section id="leaderboard">
+		<nav class="ladder-nav">
+			<div class="ladder-title">
+			<h1>Standings</h1>
+			</div>
+			<div class="ladder-search">
+				<input type="text" id="search-leaderboard" class="live-search-box" placeholder="Search Team, Player..." />
+			</div>
+		</nav>
+		<table id="rankings" class="leaderboard-results" width="100%">
+			<thead>
+				<tr>
+					<th>Rank</th>
+					<th>Team</th>
+					<th>Country</th>
+					<th>P1</th>
+					<th>P2</th>
+          <th>Games Played</th>
+					<th>PTS</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Load SCRIMcom Leaderboard Ranings -->
+			</tbody>
+		</table>
+	</section>
